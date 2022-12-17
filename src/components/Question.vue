@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import _each from 'lodash/each'
+
 export default {
   props: ["answers", "name"],
   data: () => ({
@@ -31,7 +33,13 @@ export default {
   methods: {
     handleChange(value, key) {
         this.selected[key] = value;
-        this.selectedPoint = [...this.selectedPoint, value]
+        let temp = []
+        _each(this.selected, (value, key) => {
+            if (value > 0) {
+                temp = [...temp, value]
+            }
+        })
+        this.selectedPoint = temp
         this.$emit('submit', this.selected)
     },
   },

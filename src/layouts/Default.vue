@@ -6,10 +6,6 @@
       <strong>
         <g-link to="/" class="text-2xl">{{ $static.metadata.siteName }}</g-link>
       </strong>
-      <nav class="flex gap-x-4 text-gray-600">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/blog/">Blog</g-link>
-      </nav>
     </header>
 
     <!-- Page Content -->

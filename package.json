@@ -11,6 +11,7 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "buefy": "^0.9.22",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-tailwindcss": "^3.0.1"
+    "gridsome-plugin-tailwindcss": "^3.0.1",
+    "lodash": "^4.17.21"
   }
 }
