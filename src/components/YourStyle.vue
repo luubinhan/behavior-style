@@ -2,7 +2,7 @@
   <section class="text-center">
     <Card class="mb-6">
         <Steadiness v-if="yourStyle === 'a'" />
-        <Dominance v-if="yourStyle !== 'b'" />
+        <Dominance v-if="yourStyle === 'b'" />
         <Compliance v-if="yourStyle === 'c'" />
         <Influence v-if="yourStyle === 'd'" />
     </Card>
