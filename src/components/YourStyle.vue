@@ -1,10 +1,10 @@
 <template>
   <section class="text-center">
     <Card class="mb-6">
-        <div v-if="yourStyle === 'a'" class="text-3xl mb-4">Steadiness</div>
-        <div v-if="yourStyle === 'b'" class="text-3xl mb-4">Dominance</div>
-        <div v-if="yourStyle === 'c'" class="text-3xl mb-4">Compliance</div>
-        <div v-if="yourStyle === 'd'" class="text-3xl mb-4">Influence</div>
+        <Steadiness v-if="yourStyle === 'a'" />
+        <Dominance v-if="yourStyle !== 'b'" />
+        <Compliance v-if="yourStyle === 'c'" />
+        <Influence v-if="yourStyle === 'd'" />
     </Card>
     <div class="text-xs">
       <i>
@@ -20,11 +20,19 @@
 
 <script>
 import Card from "@/components/Card";
+import Steadiness from "@/components/Steadiness"
+import Dominance from "@/components/Dominance"
+import Compliance from "@/components/Compliance"
+import Influence from "@/components/Influence"
 
 export default {
   props: ["yourStyle"],
   components: {
-    Card
+    Card,
+    Steadiness,
+    Dominance,
+    Compliance,
+    Influence
   }
 };
 </script>
