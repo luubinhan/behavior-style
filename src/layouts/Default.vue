@@ -1,18 +1,22 @@
 <template>
-  <div class="container mx-auto">
-
+  <div class="my-container">
     <!-- Header & Navigation -->
-    <header class="p-6 flex flex-col md:flex-row items-center justify-between text-center">
-      <strong>
-        <g-link to="/" class="text-2xl">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+    <header
+      class="
+        pt-32
+        text-4xl     
+        text-center
+        font-bold
+        pb-16
+      "
+    >
+      {{ $static.metadata.siteName }}
     </header>
 
     <!-- Page Content -->
-    <main class="p-6">
-      <slot/>
+    <main>
+      <slot />
     </main>
-
   </div>
 </template>
 
@@ -25,9 +29,22 @@ query {
 </static-query>
 
 <style scoped>
-/* Add any Global Styles Here */
+.my-container {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+</style>
 
-.active--exact { /* Active Nav Link */
-  @apply text-gray-900;
+<style>
+html {
+  background: #343a63 !important;
+}
+
+body {
+  color: white !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 </style>
