@@ -1,5 +1,5 @@
 <template>
-    <div class="text-3xl mb-4 my-heading font-bold"><slot /></div>
+    <div class="text-3xl mb-4 my-heading font-bold <md:text-2lg"><slot /></div>
 </template>
 
 <style scoped>

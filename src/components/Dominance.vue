@@ -23,7 +23,7 @@
       others who may see them as too impulsive, simplistic, acting before they
       think.
     </div>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-3 gap-6 <md:grid-cols-1">
       <div class="rounded-2xl bg-violet-400 p-4">
         <div class="flex align-center justify-center">
           <div
@@ -87,25 +87,29 @@
       </div>
     </div>
 
-    <div class="text-xl mb-2 font-bold pt-6">Observable Behaviours</div>
+    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">
+      Observable Behaviours
+    </div>
 
     <div
-      class="grid grid-cols-2 gap-4 mb-1"
+      class="grid grid-cols-2 gap-4 mb-1 <md:(grid-cols-1 gap-2 pb-4)"
       v-for="(ob, index) in observable"
       :key="index"
     >
-      <div class="text-right font-bold">{{ ob.label }}</div>
+      <div class="text-right font-bold <md:text-left">{{ ob.label }}</div>
       <div class="text-left">{{ ob.value }}</div>
     </div>
 
-    <div class="text-xl mb-2 font-bold pt-6">Communication</div>
+    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">
+      Communication
+    </div>
 
     <div
-      class="grid grid-cols-2 gap-4 mb-1"
+      class="grid grid-cols-2 gap-4 mb-1 <md:(grid-cols-1 gap-2 pb-4)"
       v-for="(ob, index) in communication"
       :key="index"
     >
-      <div class="text-right font-bold">{{ ob.label }}</div>
+      <div class="text-right font-bold <md:text-left">{{ ob.label }}</div>
       <div class="text-left">{{ ob.value }}</div>
     </div>
     <div class="mb-4 pt-4">In general, they may</div>
@@ -118,8 +122,10 @@
       {{ item }}
     </div>
     <section class="">
-        <div class="text-xl mb-2 font-bold pt-6">Use of Emotional Intelligence</div>
-        <b-table class="text-left" :data="data" :columns="columns"></b-table>
+      <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">
+        Use of Emotional Intelligence
+      </div>
+      <b-table class="text-left" :data="data" :columns="columns"></b-table>
     </section>
   </article>
 </template>
