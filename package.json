@@ -2,6 +2,8 @@
   "name": "gridsome-starter-minimal-tailwind",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore"
@@ -10,6 +12,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
     "buefy": "^0.9.22",
+    "gh-pages": "^4.0.0",
     "gridsome": "^0.7.0",
     "lodash": "^4.17.21"
   },

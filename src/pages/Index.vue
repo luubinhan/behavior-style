@@ -116,7 +116,7 @@ export default {
       d: 0,
     },
     results: [],
-    currentStep: 2,
+    currentStep: 0,
   }),
   computed: {
     yourStyle() {

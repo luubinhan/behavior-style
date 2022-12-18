@@ -1,9 +1,14 @@
 <template>
   <div class="my-container">
     <!-- Header & Navigation -->
+    <div class="text-center pt-32 mb-4">
+      <a href="https://luubinhan.github.io/blog/" target="_blank">
+        <img src="https://luubinhan.github.io/blog/assets/img/logo-main.3e2a7b64.png" alt="" width="120" class="mx-auto">
+      </a>
+    </div>
     <header
       class="
-        pt-32
+        
         text-4xl     
         text-center
         font-bold
@@ -18,7 +23,7 @@
       <slot />
     </main>
     <footer class="text-center py-8">
-      © by luckyluu
+      © by <a href="https://luubinhan.github.io/" target="_blank">luckyluu</a>
     </footer>
   </div>
 </template>

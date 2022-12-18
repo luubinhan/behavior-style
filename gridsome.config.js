@@ -6,7 +6,8 @@
 
 module.exports = {
   siteName: 'Assessing your Behavioural Style',
-  siteUrl: '',
+  siteUrl: 'https://luubinhan.github.io',
+  pathPrefix: '/behavior-style',
   siteDescription: 'A simple starter for Gridsome using TailwindCSS and Markdown',
   templates: {
     Post: '/blog/:title'
