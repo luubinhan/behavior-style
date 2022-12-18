@@ -17,6 +17,9 @@
     <main>
       <slot />
     </main>
+    <footer class="text-center py-8">
+      © by luckyluu
+    </footer>
   </div>
 </template>
 

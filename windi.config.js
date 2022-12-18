@@ -9,6 +9,9 @@ export default defineConfig({
         violet: {
             300: '#383d6d',
             400: '#2a3064'
+        },
+        blue: {
+            500: '#3f9ffe'
         }
       }
     },
