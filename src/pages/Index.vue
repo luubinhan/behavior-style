@@ -46,6 +46,7 @@
         :repeat="false"
         :arrow="false"
         animated="fade"
+        :indicator="false"
       >
         <b-carousel-item v-for="(options, index) in data" :key="index" class="pt-8">
           <question
@@ -56,11 +57,6 @@
           />
         </b-carousel-item>
       </b-carousel>
-      <div class="text-center pt-12">
-        <b-button type="is-warning" @click="calculateFinalResult">
-          View Result
-        </b-button>
-      </div>
     </section>
     <section v-if="currentStep === 2">
       <YourStyle :your-style="yourStyle" class="mb-8" />
@@ -98,7 +94,7 @@ export default {
       d: 0,
     },
     results: [],
-    currentStep: 1,
+    currentStep: 0,
   }),
   computed: {
     yourStyle() {
@@ -120,6 +116,19 @@ export default {
   methods: {
     updateResult(result, index) {
       this.results[index] = result;
+      
+      const noMoreLeft = index + 1 >= data.length
+      const allAnswered = Object.values(this.results[index]).every((currentValue) => currentValue > 0)
+
+      // auto go next
+      if (allAnswered && !noMoreLeft) {
+        this.carousel = index + 1
+      }
+      
+      // show result
+      if (allAnswered && noMoreLeft) {
+        this.calculateFinalResult()
+      }
     },
     calculateFinalResult() {
       this.currentStep = 2;
@@ -132,8 +141,6 @@ export default {
         },
         { a: 0, b: 0, c: 0, d: 0 }
       );
-
-      console.log(this.currentStep);
     },
     reset() {
       this.currentStep = 0;
@@ -153,5 +160,9 @@ export default {
 <style>
 .b-slider .b-slider-thumb-wrapper {
   display: none;
+}
+
+.b-slider.is-large .b-slider-tick-label {
+  font-size: 1rem;
 }
 </style>
