@@ -23,17 +23,68 @@
       others who may see them as too impulsive, simplistic, acting before they
       think.
     </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="text-right font-bold">Motivator</div>
-      <div class="text-left">Power and authority</div>
-    </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="text-right font-bold">Basic fear</div>
-      <div class="text-left">Failure</div>
-    </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="text-right font-bold">Value to the organisation</div>
-      <div class="text-left">Driving for results</div>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="rounded-2xl bg-violet-400 p-4">
+        <div class="flex align-center justify-center">
+          <div
+            class="
+              text-6xl
+              mb-4
+              rounded-full
+              bg-yellow-100
+              border border-yellow-200
+              pt-5
+              h-100px
+              w-100px
+            "
+          >
+            🚀
+          </div>
+        </div>
+
+        <div class="font-bold">Motivator</div>
+        <div class="font-light">Power and authority</div>
+      </div>
+      <div class="rounded-2xl bg-violet-400 p-4">
+        <div class="flex align-center justify-center">
+          <div
+            class="
+              text-6xl
+              mb-4
+              rounded-full
+              bg-yellow-100
+              border border-yellow-200
+              pt-5
+              h-100px
+              w-100px
+            "
+          >
+            😭
+          </div>
+        </div>
+        <div class="font-bold">Basic fear</div>
+        <div class="font-light">Failure</div>
+      </div>
+      <div class="rounded-2xl bg-violet-400 p-4">
+        <div class="flex align-center justify-center">
+          <div
+            class="
+              text-6xl
+              mb-4
+              rounded-full
+              bg-yellow-100
+              border border-yellow-200
+              pt-5
+              h-100px
+              w-100px
+            "
+          >
+            🏆
+          </div>
+        </div>
+        <div class="font-bold">Value to the organisation</div>
+        <div class="font-light">Driving for results</div>
+      </div>
     </div>
 
     <div class="text-xl mb-2 font-bold pt-6">Observable Behaviours</div>
@@ -57,7 +108,19 @@
       <div class="text-right font-bold">{{ ob.label }}</div>
       <div class="text-left">{{ ob.value }}</div>
     </div>
-    <div class="mb-4">In general, they may</div>
+    <div class="mb-4 pt-4">In general, they may</div>
+
+    <div
+      v-for="(item, index) in general"
+      :key="index"
+      class="mb-1 rounded bg-violet-400 p-2"
+    >
+      {{ item }}
+    </div>
+    <section class="">
+        <div class="text-xl mb-2 font-bold pt-6">Use of Emotional Intelligence</div>
+        <b-table class="text-left" :data="data" :columns="columns"></b-table>
+    </section>
   </article>
 </template>
   
@@ -69,6 +132,67 @@ export default {
     Heading,
   },
   data: () => ({
+    data: [
+      {
+        good_use: "decisive",
+        poor_use: "pushy",
+        best_approach: "tell what and when first",
+      },
+      {
+        good_use: "independent",
+        poor_use: "poor team player",
+        best_approach: "keep fast paced",
+      },
+      {
+        good_use: "practical",
+        poor_use: "tough",
+        best_approach: "be business-like",
+      },
+      {
+        good_use: "determined",
+        poor_use: "demanding",
+        best_approach: "don't waste time",
+      },
+      {
+        good_use: "efficient",
+        poor_use: "dominating",
+        best_approach: "give some freedom",
+      },
+      {
+        good_use: "assertive",
+        poor_use: "aggressive",
+        best_approach: "talk results",
+      },
+      {
+        good_use: "a risk taker",
+        poor_use: "cuts corners",
+        best_approach: "find shortcuts",
+      },
+      {
+        good_use: "direct",
+        poor_use: "inflexible",
+        best_approach: "",
+      },
+      {
+        good_use: "solves problems",
+        poor_use: "insensitive",
+        best_approach: "",
+      },
+    ],
+    columns: [
+      {
+        field: "good_use",
+        label: "Good use",
+      },
+      {
+        field: "poor_use",
+        label: "Poor use",
+      },
+      {
+        field: "best_approach",
+        label: "Best approach",
+      },
+    ],
     observable: [
       {
         label: "Approach",
@@ -126,6 +250,19 @@ export default {
         value:
           "inclined to be brief, crisp, and vague, resents having to take the time to write and will often scribble a brief reply on the sender's original message before returning it.",
       },
+    ],
+    general: [
+      "be direct by nature.",
+      "appear to be forceful.",
+      "may not give a lot of time.",
+      "be running late.",
+      "be, or appear to be, rude or blunt.",
+      "interrupt, may even take phone calls.",
+      "appear non-attentive.",
+      "override people.",
+      "emphasise points through challenging.",
+      "statements be critical and fault finding.",
+      "appear aggressive and try to dominate.",
     ],
   }),
 };
