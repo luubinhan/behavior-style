@@ -42,11 +42,13 @@
       </Card>
 
       <div class="text-center">
-        Already now your Behavioural style?, view
-        <span @click="viewStyle('c')">Compliance</span>,
-        <span @click="viewStyle('b')">Dominance</span>,
-        <span @click="viewStyle('d')">Influence</span>,
-        <span @click="viewStyle('a')">Steadiness</span>
+        Already now your Behavioural style? view
+        <span class="cursor-pointer underline" @click="viewStyle('c')">
+          Compliance
+          </span
+        >, <span class="cursor-pointer underline" @click="viewStyle('b')">Dominance</span>,
+        <span class="cursor-pointer underline" @click="viewStyle('d')">Influence</span>,
+        <span class="cursor-pointer underline" @click="viewStyle('a')">Steadiness</span>
       </div>
     </div>
 
@@ -76,6 +78,9 @@
       </b-carousel>
     </section>
     <section v-if="currentStep === 2">
+      <div class="text-center mb-4">
+        <b-button type="is-primary" inverted rounded @click="reset">←</b-button>
+      </div>
       <YourStyle :your-style="yourStyle" class="mb-8" />
       <div class="text-center">
         <b-button type="is-warning" @click="reset">Reset</b-button>
