@@ -15,7 +15,9 @@
         <md:text-2xl
       "
     >
-      {{ $static.metadata.siteName }}
+      <span v-if="lang === 'en'">{{ $static.metadata.siteName }}</span>
+      <span v-if="lang === 'vi'">Hành vi của bạn thuộc tuýp người nào?</span>
+      
     </header>
 
     <!-- Page Content -->
@@ -35,6 +37,17 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  props: {
+    lang: {
+      type: String,
+      default: 'en'
+    }
+  }
+}
+</script>
 
 <style scoped>
 .my-container {

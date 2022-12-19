@@ -1,28 +1,17 @@
 <template>
   <article>
-    <Heading>Compliance</Heading>
+    <Heading>{{ labels[0] }}</Heading>
 
     <div class="mb-6">
-      <div class="bg-blue-500 p-2 rounded mb-2">
-        Interested in, and places a high value, on facts, figures, data, and
-        reason.
-      </div>
-      <div class="bg-blue-500 p-2 rounded mb-2">
-        Analytical, systematic, and methodical.
-      </div>
-      <div class="bg-blue-500 p-2 rounded mb-2">
-        Follows an orderly approach in tackling tasks.
-      </div>
-      <div class="bg-blue-500 p-2 rounded mb-2">
-        Well organised and thorough.
+      <div class="bg-blue-500 p-2 rounded mb-2" v-for="(info, index) in intro" :key="index">
+        {{ info }}
       </div>
     </div>
     <div class="mb-6">
-      May be viewed too cautious, overly structured; someone who does things too
-      much according to the rules.
+      {{ labels[1] }}
     </div>
     <div class="grid grid-cols-3 gap-6 <md:grid-cols-1">
-      <div class="rounded-2xl bg-violet-400 p-4">
+      <div class="rounded-2xl bg-violet-400 p-4" v-for="(feature, index) in features" :key="index">
         <div class="flex align-center justify-center">
           <div
             class="
@@ -36,58 +25,16 @@
               w-100px
             "
           >
-            🚀
+            {{ feature.icon }}
           </div>
         </div>
 
-        <div class="font-bold">Motivator</div>
-        <div class="font-light">Standard operating procedures.</div>
-      </div>
-      <div class="rounded-2xl bg-violet-400 p-4">
-        <div class="flex align-center justify-center">
-          <div
-            class="
-              text-6xl
-              mb-4
-              rounded-full
-              bg-yellow-100
-              border border-yellow-200
-              pt-5
-              h-100px
-              w-100px
-            "
-          >
-            😭
-          </div>
-        </div>
-        <div class="font-bold">Basic fear</div>
-        <div class="font-light">Conflict</div>
-      </div>
-      <div class="rounded-2xl bg-violet-400 p-4">
-        <div class="flex align-center justify-center">
-          <div
-            class="
-              text-6xl
-              mb-4
-              rounded-full
-              bg-yellow-100
-              border border-yellow-200
-              pt-5
-              h-100px
-              w-100px
-            "
-          >
-            🏆
-          </div>
-        </div>
-        <div class="font-bold">Value to the organisation</div>
-        <div class="font-light">
-          Quality and standards. Technical competence.
-        </div>
+        <div class="font-bold">{{ feature.label }}</div>
+        <div class="font-light">{{ feature.value }}</div>
       </div>
     </div>
 
-    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">Observable Behaviours</div>
+    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">{{ labels[2] }}</div>
 
     <div
       class="grid grid-cols-2 gap-4 mb-1 <md:(grid-cols-1 gap-2 pb-4)"
@@ -98,7 +45,7 @@
       <div class="text-left">{{ ob.value }}</div>
     </div>
 
-    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">Communication</div>
+    <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">{{ labels[3] }}</div>
 
     <div
       class="grid grid-cols-2 gap-4 mb-1 <md:(grid-cols-1 gap-2 pb-4)"
@@ -108,7 +55,7 @@
       <div class="text-right font-bold <md:text-left">{{ ob.label }}</div>
       <div class="text-left">{{ ob.value }}</div>
     </div>
-    <div class="mb-4 pt-4">In general, they may</div>
+    <div class="mb-4 pt-4">{{ labels[4] }}</div>
 
     <div
       v-for="(item, index) in general"
@@ -119,7 +66,7 @@
     </div>
     <section class="">
       <div class="text-xl mb-2 font-bold pt-6 <md:(text-left text-2xl)">
-        Use of Emotional Intelligence
+        {{ labels[5] }}
       </div>
       <b-table class="text-left" :data="data" :columns="columns"></b-table>
     </section>
@@ -184,6 +131,37 @@ export default {
         field: "best_approach",
         label: "Best approach",
       },
+    ],
+    intro: [
+      "Interested in, and places a high value, on facts, figures, data, and reason.",
+      "Analytical, systematic, and methodical.",
+      "Follows an orderly approach in tackling tasks.",
+      "Well organised and thorough.",
+    ],
+    features: [
+      {
+        icon: '🚀',
+        label: 'Motivator',
+        value: 'Standard operating procedures.'
+      },
+      {
+        icon: '😭',
+        label: 'Basic fear',
+        value: 'Conflict'
+      },
+      {
+        icon: '🏆',
+        label: 'Value to the organisation',
+        value: 'Quality and standards. Technical competence.'
+      },
+    ],
+    labels: [
+      "Compliance",
+      "May be viewed too cautious, overly structured; someone who does things too much according to the rules.",
+      "Observable Behaviours",
+      "Communication",
+      "In general, they may",
+      "Use of Emotional Intelligence"
     ],
     observable: [
       {

@@ -77,7 +77,7 @@
       <div class="text-center mb-4">
         <b-button type="is-primary" inverted rounded @click="reset">←</b-button>
       </div>
-      <YourStyle :your-style="yourStyle" class="mb-8" />
+      <YourStyle :your-style="yourStyle" class="mb-8" lang="vi" />
       <div class="text-center">
         <b-button type="is-warning" @click="reset">Làm lại</b-button>
       </div>
@@ -91,7 +91,7 @@ import _max from "lodash/max";
 import Question from "@/components/Question";
 import YourStyle from "@/components/YourStyle";
 import Card from "@/components/Card";
-import data from "../data";
+import data from "../data.vi";
 
 export default {
   components: {
