@@ -3,8 +3,8 @@
     <Card class="mb-6">
       <Steadiness v-if="yourStyle === 'a'" :lang="lang" />
       <Dominance v-if="yourStyle === 'b'" :lang="lang" />
-      <Compliance v-if="yourStyle === 'c'" :lang="lang" />
-      <Influence v-if="yourStyle === 'd'" :lang="lang" />
+      <Compliance v-if="yourStyle === 'c'" :lang="lang" :data="DataCompliance" />
+      <Compliance v-if="yourStyle === 'd'" :lang="lang" :data="DataDominance" />
     </Card>
     <div class="text-xs" v-if="lang === 'vi'">
       <i>
@@ -33,6 +33,8 @@ import Steadiness from "@/components/Steadiness";
 import Dominance from "@/components/Dominance";
 import Compliance from "@/components/Compliance";
 import Influence from "@/components/Influence";
+import DataCompliance from "../data/compliance";
+import DataDominance from "../data/dominance";
 
 export default {
   props: ["yourStyle", "lang"],
@@ -43,5 +45,9 @@ export default {
     Compliance,
     Influence,
   },
+  data: () => ({
+    DataCompliance,
+    DataDominance
+  })
 };
 </script>
