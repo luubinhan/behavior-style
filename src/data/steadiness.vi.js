@@ -123,21 +123,21 @@ export default {
     communication: [
         {
             label: "Phong cách quản lý",
-            value: "Bắt buộc theo nguyên tắc.",
+            value: "Organising",
         },
         {
             label: "Phong cách giao tiếp",
-            value: "Bằng văn bản.",
+            value: "Listening",
         },
         {
             label: "Muốn biết",
             value:
-                "Mọi thứ phải có số liệu, dữ kiện trình bài có trật tự, kiểm tra cẩn thận những gì đang thảo luận",
+          "How others may feel about the matter, who else will be involved in it, past experiences in similar situations, etc.",
         },
         {
             label: "Văn phong",
             value:
-                "Khá trang trọng, chính xác, dữ liệu được liệt kê rõ ràng.",
+                "informal, chatty, and friendly. May include names and make references to others and to past events.",
         },
     ],
     general: [
