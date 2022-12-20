@@ -51,26 +51,26 @@ export default {
         },
     ],
     intro: [
-        "Interested in, and places a high value, on facts, figures, data, and reason.",
-        "Analytical, systematic, and methodical.",
-        "Follows an orderly approach in tackling tasks.",
-        "Well organised and thorough.",
+        "Quan tâm và đánh giá cao sự kiện dựa trên số liệu, dữ liệu, nguyên nhân",
+        "Phân tích, hệ thống, có phương pháp",
+        "Giải quyết công việc theo thứ tự và kế hoạch",
+        "Thấu đáu và có tổ chức",
     ],
     features: [
         {
             icon: "🚀",
-            label: "Motivator",
-            value: "Standard operating procedures.",
+            label: "Nguồn động lực",
+            value: "Quy trình chuẩn hóa.",
         },
         {
             icon: "😭",
-            label: "Basic fear",
-            value: "Conflict",
+            label: "Sợ",
+            value: "Xung đột",
         },
         {
             icon: "🏆",
-            label: "Value to the organisation",
-            value: "Quality and standards. Technical competence.",
+            label: "Giá trị cho tổ chức",
+            value: "Chất lượng và tiêu chuẩn. Năng lực kỹ thuật",
         },
     ],
     labels: [
@@ -83,45 +83,45 @@ export default {
     ],
     observable: [
         {
-            label: "Approach",
+            label: "Tiếp cận",
             value:
                 "Punctual, prepared, and logical; with cautious phrasing of questions.",
         },
         {
-            label: "Time orientation",
+            label: "Sử dụng thời gian",
             value:
                 "Analyses past data, considers the present situation, and projects these facts. Views time in a linear or sequential fashion.",
         },
         {
-            label: "Handshake",
+            label: "Bắt tay",
             value: "Loose and brief.",
         },
         {
-            label: "Office",
+            label: "Bàn làm việc",
             value:
                 "Very neat, orderly, almost impersonal; desk is often clear apart from your documentation.",
         },
         {
-            label: "Dress",
+            label: "Trang phục",
             value:
                 "Conservative, neat, smart business clothes; avoids anything too flamboyant and stays neat all day.",
         },
         {
-            label: "Manners",
+            label: "Tác phong",
             value: "Very polite, correct, and diplomatic.",
         },
         {
-            label: "Eye contact",
+            label: "Giao tiếp bằng mắt",
             value:
                 "Avoids a lot of eye contact, particularly in an aggressive or hostile situation. May be direct when sure of the facts.",
         },
         {
-            label: "Body Language",
+            label: "Ngôn ngữ cơ thể",
             value:
                 "Tends to be cautious about expressing feelings through gesture or facial expression; may be seen as impersonal or cold.",
         },
         {
-            label: "Handling disagreements",
+            label: "Xử lý bất đồng",
             value:
                 "Prefers to avoid conflict unless or until they have supporting evidence.",
         },

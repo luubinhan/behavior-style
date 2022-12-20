@@ -70,18 +70,18 @@ export default {
     features: [
         {
             icon: "🚀",
-            label: "Motivator",
-            value: "Public praise and recognition",
+            label: "Nguồn động lực",
+            value: "Khen ngợi và công nhận trước đám đông",
         },
         {
             icon: "😭",
-            label: "Basic fear",
-            value: "Rejection",
+            label: "Sợ",
+            value: "Việc bị từ chối",
         },
         {
             icon: "🏆",
-            label: "Value to the organisation",
-            value: "Working with and through people.",
+            label: "Giá trị cho tổ chức",
+            value: "Làm việc với con người.",
         },
     ],
     labels: [
@@ -94,42 +94,42 @@ export default {
     ],
     observable: [
         {
-            label: "Approach",
+            label: "Tiếp cận",
             value: "Will be exceptionally enthusiastic.",
         },
         {
-            label: "Time orientation",
+            label: "Sử dụng thời gian",
             value: "Future focused.",
         },
         {
-            label: "Handshake",
+            label: "Bắt tay",
             value: "Prolonged, friendly.",
         },
         {
-            label: "Office",
+            label: "Bàn làm việc",
             value:
                 "Certificates, pictures, trophies, newspaper clippings relating to themselves on display.",
         },
         {
-            label: "Dress",
+            label: "Trang phục",
             value:
                 "May be dressed in the latest fashion; colour coordinated and may dress to impress.",
         },
         {
-            label: "Manners",
+            label: "Tác phong",
             value:
                 "Could appear superficial and impulsive; happy to share their feelings.",
         },
         {
-            label: "Eye contact",
+            label: "Giao tiếp bằng mắt",
             value: "Frequent and friendly.",
         },
         {
-            label: "Body Language",
+            label: "Ngôn ngữ cơ thể",
             value: "Animated hand and body movement.",
         },
         {
-            label: "Handling disagreements",
+            label: "Xử lý bất đồng",
             value:
                 "Prefers to persuade rather than confront aggressively or demand.",
         },

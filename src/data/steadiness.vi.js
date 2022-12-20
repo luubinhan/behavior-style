@@ -59,18 +59,18 @@ export default {
     features: [
         {
             icon: "🚀",
-            label: "Motivator",
-            value: "Security",
+            label: "Nguồn động lực",
+            value: "An toàn",
         },
         {
             icon: "😭",
-            label: "Basic fear",
-            value: "Insecurity",
+            label: "Sợ",
+            value: "Không an toàn",
         },
         {
             icon: "🏆",
-            label: "Value to the organisation",
-            value: "Service and support. A specialist.",
+            label: "Giá trị cho tổ chức",
+            value: "Dịch vụ và hỗ trợ. Chuyên gia.",
         },
     ],
     labels: [
@@ -83,39 +83,39 @@ export default {
     ],
     observable: [
         {
-            label: "Approach",
+            label: "Tiếp cận",
             value: "Tentative, considerate, and organised.",
         },
         {
-            label: "Time orientation",
+            label: "Sử dụng thời gian",
             value: "Refers to past events and relationships with others over time.",
         },
         {
-            label: "Handshake",
+            label: "Bắt tay",
             value: "Sincere",
         },
         {
-            label: "Office",
+            label: "Bàn làm việc",
             value: "Pictures in the office may be of possessions and family.",
         },
         {
-            label: "Dress",
+            label: "Trang phục",
             value: "Appropriate but for comfort rather than fashion.",
         },
         {
-            label: "Manners",
+            label: "Tác phong",
             value: "Very courteous and welcoming.",
         },
         {
-            label: "Eye contact",
+            label: "Giao tiếp bằng mắt",
             value: "Warm, friendly, sincere.",
         },
         {
-            label: "Body Language",
+            label: "Ngôn ngữ cơ thể",
             value: "Relaxed and attentive.",
         },
         {
-            label: "Handling disagreements",
+            label: "Xử lý bất đồng",
             value:
                 "Prefers to smooth over the situation rather than rush in with an aggressive decision.",
         },

@@ -70,18 +70,18 @@ export default {
     features: [
         {
             icon: "🚀",
-            label: "Motivator",
-            value: "Power and authority",
+            label: "Nguồn động lực",
+            value: "Quyền lực và thẩm quyền",
         },
         {
             icon: "😭",
-            label: "Basic fear",
-            value: "Failure",
+            label: "Sợ",
+            value: "Thất bại",
         },
         {
             icon: "🏆",
-            label: "Value to the organisation",
-            value: "Driving for results",
+            label: "Giá trị cho tổ chức",
+            value: "Dẫn dắt đến kết quả",
         },
     ],
     labels: [
@@ -94,40 +94,40 @@ export default {
     ],
     observable: [
         {
-            label: "Approach",
+            label: "Tiếp cận",
             value: "Tries to dominate or take over, direct.",
         },
         {
-            label: "Time orientation",
+            label: "Sử dụng thời gian",
             value: "Here and now",
         },
         {
-            label: "Handshake",
+            label: "Bắt tay",
             value: "Strong, assertive.",
         },
         {
-            label: "Office",
+            label: "Bàn làm việc",
             value: "The office and desk are probably disorganised.",
         },
         {
-            label: "Dress",
+            label: "Trang phục",
             value: "Generally, not concerned, but will dress appropriately.",
         },
         {
-            label: "Manners",
+            label: "Tác phong",
             value: "Impatient, rude, and abrupt.",
         },
         {
-            label: "Eye contact",
+            label: "Giao tiếp bằng mắt",
             value: "Direct.",
         },
         {
-            label: "Body Language",
+            label: "Ngôn ngữ cơ thể",
             value:
                 "Restless and fidgety, usually looks at the speaker and leans forward when interested; may lean back or look away when waiting or when bored.",
         },
         {
-            label: "Handling disagreements",
+            label: "Xử lý bất đồng",
             value: "Will not avoid conflict, may even welcome it.",
         },
     ],
