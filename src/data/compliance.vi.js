@@ -74,12 +74,12 @@ export default {
         },
     ],
     labels: [
-        "Compliance",
+        "Tuân thủ / Nhường nhịn",
         "May be viewed too cautious, overly structured; someone who does things too much according to the rules.",
-        "Observable Behaviours",
-        "Communication",
-        "In general, they may",
-        "Use of Emotional Intelligence",
+        "Đặc điểm nhận dạng",
+        "Giao tiếp",
+        "Nhìn chung, bạn là người",
+        "Sử dụng cảm xúc",
     ],
     observable: [
         {

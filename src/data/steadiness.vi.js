@@ -76,10 +76,10 @@ export default {
     labels: [
         "Steadiness",
         "May be viewed as emotional, sentimental, and too easily persuaded by others.",
-        "Observable Behaviours",
-        "Communication",
-        "In general, they may",
-        "Use of Emotional Intelligence",
+        "Đặc điểm nhận dạng",
+        "Giao tiếp",
+        "Nhìn chung, bạn là người",
+        "Sử dụng cảm xúc",
     ],
     observable: [
         {

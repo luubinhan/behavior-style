@@ -87,10 +87,10 @@ export default {
     labels: [
         "Influence",
         "May be viewed as superficial and irresponsible as they can be poor with detail and their hunches can go wrong.",
-        "Observable Behaviours",
-        "Communication",
-        "In general, they may",
-        "Use of Emotional Intelligence",
+        "Đặc điểm nhận dạng",
+        "Giao tiếp",
+        "Nhìn chung, bạn là người",
+        "Sử dụng cảm xúc",
     ],
     observable: [
         {

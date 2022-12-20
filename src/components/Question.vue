@@ -17,7 +17,7 @@
           </div>
           <div >
             <b-select
-              placeholder="Most appropriate"
+              :placeholder="placeholder"
               @input="(value) => handleChange(value, key)"
               size="is-small"
             >
@@ -45,7 +45,7 @@ export default {
   components: {
     Card,
   },
-  props: ["answers", "name", "index"],
+  props: ["answers", "name", "index", "lang"],
   data: () => ({
     selected: {
       a: 0,
@@ -55,6 +55,15 @@ export default {
     },
     selectedPoint: [],
   }),
+  computed: {
+    placeholder() {
+      if (this.lang === 'vi') {
+        return 'Chọn'
+      }
+      
+      return 'Most appropriate'
+    }
+  },
   methods: {
     handleChange(value, key) {
       this.selected[key] = value;

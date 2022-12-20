@@ -87,10 +87,10 @@ export default {
     labels: [
         "Dominance",
         "May be accused of looking only at the short term and neglecting long-range implications. This tendency sometimes exposes them to criticism from others who may see them as too impulsive, simplistic, acting before they think.",
-        "Observable Behaviours",
-        "Communication",
-        "In general, they may",
-        "Use of Emotional Intelligence",
+        "Đặc điểm nhận dạng",
+        "Giao tiếp",
+        "Nhìn chung, bạn là người",
+        "Sử dụng cảm xúc",
     ],
     observable: [
         {

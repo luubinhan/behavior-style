@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout lang="vi">
     <div v-if="currentStep === 0">
       <Card class="mb-6">
         <h1 class="text-xl mb-4">
@@ -66,7 +66,8 @@
         >
           <question
             :answers="options"
-            name="Question"
+            name="Câu"
+            lang="vi"
             :index="`${index + 1}`"
             @submit="(result) => updateResult(result, index)"
           />
@@ -91,7 +92,7 @@ import _max from "lodash/max";
 import Question from "@/components/Question";
 import YourStyle from "@/components/YourStyle";
 import Card from "@/components/Card";
-import data from "../data.vi";
+import data from "../data/data.vi";
 
 export default {
   components: {

@@ -95,7 +95,7 @@ import _max from "lodash/max";
 import Question from "@/components/Question";
 import YourStyle from "@/components/YourStyle";
 import Card from "@/components/Card";
-import data from "../data";
+import data from "../data/data";
 
 export default {
   components: {
