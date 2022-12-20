@@ -39,15 +39,15 @@ export default {
     columns: [
         {
             field: "good_use",
-            label: "Good use",
+            label: "Tốt",
         },
         {
             field: "poor_use",
-            label: "Poor use",
+            label: "Kém",
         },
         {
             field: "best_approach",
-            label: "Best approach",
+            label: "Cách tiếp cận tốt nhất",
         },
     ],
     intro: [
@@ -122,20 +122,20 @@ export default {
     ],
     communication: [
         {
-            label: "Management style",
+            label: "Phong cách quản lý",
             value: "Rule enforcement.",
         },
         {
-            label: "Communication style",
+            label: "Phong cách giao tiếp",
             value: "In writing.",
         },
         {
-            label: "Wants to know",
+            label: "Muốn biết",
             value:
                 "Facts, figures, and data presented in an orderly fashion with documentation and the chance to examine carefully what is being discussed.",
         },
         {
-            label: "Written communication style",
+            label: "Văn phong",
             value:
                 "Quite formal and precise with data and key points listed. May use an outline style with subheadings, numbered sections, tables, and appendices.",
         },

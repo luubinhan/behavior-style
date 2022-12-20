@@ -1,53 +1,53 @@
 export default {
     data: [
         {
-            good_use: "accurate",
-            poor_use: "critical",
-            best_approach: "tell how first",
+            good_use: "Chính xác",
+            poor_use: "Phê bình",
+            best_approach: "phải nói như thế nào",
         },
         {
-            good_use: "conscientious",
-            poor_use: "fussy",
-            best_approach: "list pros and cons",
+            good_use: "Tận tâm",
+            poor_use: "Làm phiền",
+            best_approach: "Liệt kê ưu, nhược điểm",
         },
         {
-            good_use: "serious",
-            poor_use: "moralistic",
-            best_approach: "be accurate and logical",
+            good_use: "Nghiêm trọng",
+            poor_use: "Đạo đức",
+            best_approach: "Chính xác và logic",
         },
         {
-            good_use: "persistent",
-            poor_use: "stuffy",
-            best_approach: "provide evidence",
+            good_use: "Kiên định",
+            poor_use: "Ngột ngạt",
+            best_approach: "Cung cấp dẫn chứng",
         },
         {
-            good_use: "organised",
-            poor_use: "stubborn",
-            best_approach: "provide deadlines",
+            good_use: "Sắp đặt",
+            poor_use: "Bướng",
+            best_approach: "Giao thời hạn",
         },
         {
-            good_use: "deliberate",
-            poor_use: "indecisive",
-            best_approach: "give them time",
+            good_use: "Cẩn thận",
+            poor_use: "Thiếu quyết đoán",
+            best_approach: "Cho thời gian",
         },
         {
-            good_use: "cautious",
+            good_use: "Dè dặt",
             poor_use: "",
-            best_approach: "don't rush or surprise",
+            best_approach: "Đừng vội vàng hay làm bất ngờ",
         },
     ],
     columns: [
         {
             field: "good_use",
-            label: "Good use",
+            label: "Tốt",
         },
         {
             field: "poor_use",
-            label: "Poor use",
+            label: "Kém",
         },
         {
             field: "best_approach",
-            label: "Best approach",
+            label: "Cách tiếp cận tốt nhất",
         },
     ],
     intro: [
@@ -75,7 +75,7 @@ export default {
     ],
     labels: [
         "Tuân thủ / Nhường nhịn",
-        "May be viewed too cautious, overly structured; someone who does things too much according to the rules.",
+        "Có thể xem là quá thận trọng, quá nguyên tắc, một người làm mọi thứ theo nguyên tắc đề ra",
         "Đặc điểm nhận dạng",
         "Giao tiếp",
         "Nhìn chung, bạn là người",
@@ -85,63 +85,63 @@ export default {
         {
             label: "Tiếp cận",
             value:
-                "Punctual, prepared, and logical; with cautious phrasing of questions.",
+                "Đúng giờ, luôn chuẩn bị và logic, thận trọng trong cách đặt câu hỏi.",
         },
         {
             label: "Sử dụng thời gian",
             value:
-                "Analyses past data, considers the present situation, and projects these facts. Views time in a linear or sequential fashion.",
+                "Phân tích theo dữ liệu trong quá khứ, xem xét tình hình hiện tại và đưa ra dự đoán. Xem thời gian như mỗi chuỗi các sự kiện nối tiếp, có nguyên nhân có kết quả",
         },
         {
             label: "Bắt tay",
-            value: "Loose and brief.",
+            value: "Lỏng lẻo và ngắn gọn",
         },
         {
             label: "Bàn làm việc",
             value:
-                "Very neat, orderly, almost impersonal; desk is often clear apart from your documentation.",
+                "Rọn gàng, ngăn nắp, không cá nhân quá",
         },
         {
             label: "Trang phục",
             value:
-                "Conservative, neat, smart business clothes; avoids anything too flamboyant and stays neat all day.",
+                "Ăn mặc lịch sự, gọn gàng, thông minh, tránh những thứ lòe lẹt và luôn gọn gàng cả ngày",
         },
         {
             label: "Tác phong",
-            value: "Very polite, correct, and diplomatic.",
+            value: "Rất lịch sự và đúng mực",
         },
         {
             label: "Giao tiếp bằng mắt",
             value:
-                "Avoids a lot of eye contact, particularly in an aggressive or hostile situation. May be direct when sure of the facts.",
+                "Tránh giao tiếp bằng mắt, đặc biệt trong các tình huống tranh cãi. Thẳng tính khi chắc chắn về sự thật",
         },
         {
             label: "Ngôn ngữ cơ thể",
             value:
-                "Tends to be cautious about expressing feelings through gesture or facial expression; may be seen as impersonal or cold.",
+                "Có xu hướng thận trọng trong việc thể hiện cảm xúc qua cử chỉ hoặc nét mặt, có thể xem là không cá tính và lạnh lùng",
         },
         {
             label: "Xử lý bất đồng",
             value:
-                "Prefers to avoid conflict unless or until they have supporting evidence.",
+                "Tránh xung đột trừ khi có bằng chứng hỗ trợ",
         },
     ],
     communication: [
         {
-            label: "Management style",
+            label: "Phong cách quản lý",
             value: "Rule enforcement.",
         },
         {
-            label: "Communication style",
+            label: "Phong cách giao tiếp",
             value: "In writing.",
         },
         {
-            label: "Wants to know",
+            label: "Muốn biết",
             value:
                 "Facts, figures, and data presented in an orderly fashion with documentation and the chance to examine carefully what is being discussed.",
         },
         {
-            label: "Written communication style",
+            label: "Văn phong",
             value:
                 "Quite formal and precise with data and key points listed. May use an outline style with subheadings, numbered sections, tables, and appendices.",
         },

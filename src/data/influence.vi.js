@@ -49,15 +49,15 @@ export default {
     columns: [
         {
             field: "good_use",
-            label: "Good use",
+            label: "Tốt",
         },
         {
             field: "poor_use",
-            label: "Poor use",
+            label: "Kém",
         },
         {
             field: "best_approach",
-            label: "Best approach",
+            label: "Cách tiếp cận tốt nhất",
         },
     ],
     intro: [
@@ -136,15 +136,15 @@ export default {
     ],
     communication: [
         {
-            label: "Management style",
+            label: "Phong cách quản lý",
             value: "Motivating",
         },
         {
-            label: "Communication style",
+            label: "Phong cách giao tiếp",
             value: "Talkative",
         },
         {
-            label: "Wants to know",
+            label: "Muốn biết",
             value: "What is new, exciting, and innovative.",
         },
         {
