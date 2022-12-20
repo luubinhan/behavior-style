@@ -1,10 +1,7 @@
 <template>
   <section class="text-center">
     <Card class="mb-6">
-      <Steadiness v-if="yourStyle === 'a'" :lang="lang" />
-      <Dominance v-if="yourStyle === 'b'" :lang="lang" />
-      <Compliance v-if="yourStyle === 'c'" :lang="lang" :data="DataCompliance" />
-      <Compliance v-if="yourStyle === 'd'" :lang="lang" :data="DataDominance" />
+      <Compliance :data="data" />
     </Card>
     <div class="text-xs" v-if="lang === 'vi'">
       <i>
@@ -35,6 +32,8 @@ import Compliance from "@/components/Compliance";
 import Influence from "@/components/Influence";
 import DataCompliance from "../data/compliance";
 import DataDominance from "../data/dominance";
+import DataSteadiness from "../data/steadiness";
+import DataInfluence from "../data/influence";
 
 export default {
   props: ["yourStyle", "lang"],
@@ -47,7 +46,37 @@ export default {
   },
   data: () => ({
     DataCompliance,
-    DataDominance
-  })
+    DataDominance,
+  }),
+  computed: {
+    data() {
+      if (this.lang !== "en") {
+        switch (this.yourStyle) {
+          case "a":
+            return DataSteadiness;
+          case "b":
+            return DataDominance;
+          case "c":
+            return DataCompliance;
+          case "d":
+            return DataInfluence;
+        }
+      }
+
+      if (this.lang === "vi") {
+        switch (this.yourStyle) {
+          case "a":
+            return DataSteadiness;
+          case "b":
+            return DataDominance;
+          case "c":
+            return DataCompliance;
+          case "d":
+            return DataInfluence;
+        }
+      }
+      return {};
+    },
+  },
 };
 </script>
