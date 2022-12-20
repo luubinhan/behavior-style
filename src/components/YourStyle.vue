@@ -31,9 +31,13 @@ import Dominance from "@/components/Dominance";
 import Compliance from "@/components/Compliance";
 import Influence from "@/components/Influence";
 import DataCompliance from "../data/compliance";
+import DataComplianceVi from "../data/compliance.vi";
 import DataDominance from "../data/dominance";
+import DataDominanceVi from "../data/dominance.vi";
 import DataSteadiness from "../data/steadiness";
+import DataSteadinessVi from "../data/steadiness.vi";
 import DataInfluence from "../data/influence";
+import DataInfluenceVi from "../data/influence.vi";
 
 export default {
   props: ["yourStyle", "lang"],
@@ -66,13 +70,13 @@ export default {
       if (this.lang === "vi") {
         switch (this.yourStyle) {
           case "a":
-            return DataSteadiness;
+            return DataSteadinessVi;
           case "b":
-            return DataDominance;
+            return DataDominanceVi;
           case "c":
-            return DataCompliance;
+            return DataComplianceVi;
           case "d":
-            return DataInfluence;
+            return DataInfluenceVi;
         }
       }
       return {};
