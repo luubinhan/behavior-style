@@ -123,21 +123,21 @@ export default {
     communication: [
         {
             label: "Phong cách quản lý",
-            value: "Rule enforcement.",
+            value: "Bắt buộc theo nguyên tắc.",
         },
         {
             label: "Phong cách giao tiếp",
-            value: "In writing.",
+            value: "Bằng văn bản.",
         },
         {
             label: "Muốn biết",
             value:
-                "Facts, figures, and data presented in an orderly fashion with documentation and the chance to examine carefully what is being discussed.",
+                "Mọi thứ phải có số liệu, dữ kiện trình bài có trật tự, kiểm tra cẩn thận những gì đang thảo luận",
         },
         {
             label: "Văn phong",
             value:
-                "Quite formal and precise with data and key points listed. May use an outline style with subheadings, numbered sections, tables, and appendices.",
+                "Khá trang trọng, chính xác, dữ liệu được liệt kê rõ ràng.",
         },
     ],
     general: [
