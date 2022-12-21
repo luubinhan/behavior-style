@@ -1,48 +1,48 @@
 export default {
     data: [
         {
-            good_use: "verbal",
-            poor_use: "talkative",
-            best_approach: "tell who first",
+            good_use: "hoạt ngôn",
+            poor_use: "nói nhiều",
+            best_approach: "nói ai trước",
         },
         {
-            good_use: "inspiring",
-            poor_use: "easily distracted",
-            best_approach: "be enthusiastic",
+            good_use: "cảm hứng",
+            poor_use: "dễ phân tâm",
+            best_approach: "hăng hái lên",
         },
         {
-            good_use: "ambitious",
-            poor_use: "impulsive",
-            best_approach: "allow for fun",
+            good_use: "tham vọng",
+            poor_use: "bốc đồng",
+            best_approach: "cho phép vui vẻ",
         },
         {
-            good_use: "enthusiastic",
-            poor_use: "undisciplined",
-            best_approach: "support their creativity",
+            good_use: "sốt sắng",
+            poor_use: "vô kỷ luật",
+            best_approach: "hỗ trợ sự sáng tạo",
         },
         {
-            good_use: "energetic",
-            poor_use: "excitable",
-            best_approach: "support their intuition",
+            good_use: "năng lượng",
+            poor_use: "dễ kích động",
+            best_approach: "hỗ trợ trực giác",
         },
         {
-            good_use: "confident",
-            poor_use: "egotistical",
-            best_approach: "talk about people and goals",
+            good_use: "tự tin",
+            poor_use: "tự cao tự đại",
+            best_approach: "nói về con người và kết quả",
         },
         {
-            good_use: "friendly",
-            poor_use: "emotional",
-            best_approach: "handle the details for them",
+            good_use: "thân thiện",
+            poor_use: "đa cảm",
+            best_approach: "xử lý tiểu tiết giúp họ",
         },
         {
-            good_use: "influential",
-            poor_use: "manipulating",
-            best_approach: "value feelings and opinions",
+            good_use: "có tầm ảnh hưởng",
+            poor_use: "thao túng",
+            best_approach: "đánh gia cao quan điểm và cảm xúc",
         },
         {
-            good_use: "decisive",
-            poor_use: "overly dramatic",
+            good_use: "quả quyết",
+            poor_use: "quá kịch tính",
             best_approach: "",
         },
     ],
@@ -61,11 +61,11 @@ export default {
         },
     ],
     intro: [
-        "Interested in taking people with them, enthusing them with optimism and energy.",
-        "Open with people.",
-        "Willing to make personal investments and so they are generally very good with people.",
-        "Can frighten people by being over-enthusiastic and dominant.",
-        "Can feel personally let down by people and left out."
+        "Quan tâm đến mọi người, truyền lửa và sự lạc quan cho những người đi cùng",
+        "Cởi mở với mọi người",
+        "Sẵn sàng nói chuyện với mọi người",
+        "Có thể khiến mọi người sợ hãi vì quá nhiệt tình và có khuynh hướng thống trị",
+        "Sẽ cảm thấy thất vọng khi bị mọi người làm thất vọng hay bỏ rơi"
     ],
     features: [
         {
@@ -85,8 +85,8 @@ export default {
         },
     ],
     labels: [
-        "Influence",
-        "May be viewed as superficial and irresponsible as they can be poor with detail and their hunches can go wrong.",
+        "Ảnh hưởng",
+        "Làm việc đôi khi hời hợt và vô trách nhiệm, kém trong tiểu tiết và cảm tính đôi khi dẫn đến những kết quả không mong muốn",
         "Đặc điểm nhận dạng",
         "Giao tiếp",
         "Nhìn chung, bạn là người",
@@ -95,74 +95,74 @@ export default {
     observable: [
         {
             label: "Tiếp cận",
-            value: "Will be exceptionally enthusiastic.",
+            value: "Đặc biệt nhiệt tình",
         },
         {
             label: "Sử dụng thời gian",
-            value: "Future focused.",
+            value: "Tập trung vào tương lai",
         },
         {
             label: "Bắt tay",
-            value: "Prolonged, friendly.",
+            value: "Lâu, thân thiện",
         },
         {
             label: "Bàn làm việc",
             value:
-                "Certificates, pictures, trophies, newspaper clippings relating to themselves on display.",
+                "Trưng bày giấy chứng nhận, danh hiệu, hình ảnh cá nhân, gia đình",
         },
         {
             label: "Trang phục",
             value:
-                "May be dressed in the latest fashion; colour coordinated and may dress to impress.",
+                "Theo thời trang mới nhất, phối hợp nhiều màu sắc, dùng thời trang như công cụ tạo ấn tượng",
         },
         {
             label: "Tác phong",
             value:
-                "Could appear superficial and impulsive; happy to share their feelings.",
+                "Có khi hời hợt, bốc đồng. Vui vẻ chia sẽ cảm xúc cá nhân",
         },
         {
             label: "Giao tiếp bằng mắt",
-            value: "Frequent and friendly.",
+            value: "Thường xuyên và thân thiện",
         },
         {
             label: "Ngôn ngữ cơ thể",
-            value: "Animated hand and body movement.",
+            value: "Sử dùng nhiều ngôn ngữ cơ thể.",
         },
         {
             label: "Xử lý bất đồng",
             value:
-                "Prefers to persuade rather than confront aggressively or demand.",
+                "Thích được thuyết phục, không thích đối đầu hay ra lệnh",
         },
     ],
     communication: [
         {
             label: "Phong cách quản lý",
-            value: "Motivating",
+            value: "Truyền cảm hứng",
         },
         {
             label: "Phong cách giao tiếp",
-            value: "Talkative",
+            value: "Nói nhiều",
         },
         {
             label: "Muốn biết",
-            value: "What is new, exciting, and innovative.",
+            value: "Có gì mới mẻ, thú vị, sáng tạo",
         },
         {
-            label: "Written communication style",
+            label: "Văn phong",
             value:
-                "Inclined to be idea-orientated and are often quite lengthy in making a point. Rather vague and abstract.",
+                "Có xu hướng định hướng ý tưởng và thường khá dài dòng trong việc đưa ra quan điểm. Khá mơ hồ và trừu tượng",
         },
     ],
     general: [
-        "be positive and verbal.",
-        "be willing to be friendly and very sociable.",
-        "be very communicative.",
-        "tell stories and anecdotes.",
-        "share personal feelings.",
-        "be over-enthusiastic, agreeing to every suggestion.",
-        "seem to be very interested and yet may delay on a decision.",
-        "act impulsively.",
-        "be inattentive to detail.",
-        "appear to be superficial.",
+        "Tích cực và hoạt ngôn.",
+        "Thân thiện và hòa đồng",
+        "Thích giao tiếp",
+        "Kể truyện và giai thoại",
+        "chia sẽ cảm xúc cá nhân",
+        "Quá nhiệt tình, đồng ý với mọi đề xuất.",
+        "Dường như quan tâm mọi thứ, nhưng hay trì hoãn quyết định.",
+        "Hành động bốc đồng",
+        "Không chú ý đến chi tiết",
+        "Có vẻ hời hợt",
     ],
 }
