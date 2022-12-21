@@ -15,7 +15,9 @@
         <md:text-2xl
       "
     >
-      {{ $static.metadata.siteName }}
+      <span v-if="lang === 'en'">{{ $static.metadata.siteName }}</span>
+      <span v-if="lang === 'vi'">Hành vi của bạn thuộc tuýp người nào?</span>
+      
     </header>
 
     <!-- Page Content -->
@@ -23,7 +25,14 @@
       <slot />
     </main>
     <footer class="text-center py-8">
+      <span>
       © by <a href="https://luubinhan.github.io/" target="_blank">luckyluu</a>
+    </span>
+    <span class="pl-3 pr-4">-</span>
+    <span>
+      <g-link class="underline text-white pr-2" to="/vi" style="color: #fff">🇻🇳 Tiếng Việt</g-link>
+      <g-link class="underline text-white pl-2" to="/" style="color: #fff">🇬🇧 English</g-link>
+    </span>
     </footer>
   </div>
 </template>
@@ -35,6 +44,17 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  props: {
+    lang: {
+      type: String,
+      default: 'en'
+    }
+  }
+}
+</script>
 
 <style scoped>
 .my-container {

@@ -1,24 +1,20 @@
 <template>
-  <Layout>
+  <Layout lang="vi">
     <div v-if="currentStep === 0">
       <Card class="mb-6">
         <h1 class="text-xl mb-4">
-          The following questionnaire will enable you to reflect on how you
-          think you behave and will give an indication of your behavioural
-          style.
+          Những câu hỏi sau sẽ phản ánh cách bạn cư xữ và xác định kiểu hành vi của bạn
         </h1>
         <div class="font-bold mb-4">
-          There are no right and wrong responses!
+          Không có câu trả lời nào là đúng hay sai!
         </div>
         <div class="mb-4">
-          Allocate a 4 to the word or phrase that is most like you or that you
-          relate to most. Allocate a 3 to the next most like you, then a 2 and
-          then a 1 to the least like you.
+          Chọn 4 khi bạn thấy nó giống với mình nhất, 1 cho lựa chọn không phản ánh đúng bạn nhất
         </div>
         <div class="rounded-xl p-4 bg-violet-400 mb-8">
           <div class="flex justify-between">
-            <div>Least</div>
-            <div>Most</div>
+            <div>Không giống</div>
+            <div>Giống</div>
           </div>
           <b-slider
             :min="1"
@@ -37,18 +33,18 @@
           </b-slider>
         </div>
         <div class="text-center">
-          <b-button type="is-warning" @click="currentStep = 1">Start</b-button>
+          <b-button type="is-warning" @click="currentStep = 1">Bắt đầu</b-button>
         </div>
       </Card>
 
       <div class="text-center">
-        Already now your Behavioural style? view
+        Nếu đã xác định được kiểu hành vi ứng xữ của mình? xem
         <span class="cursor-pointer underline" @click="viewStyle('c')">
-          Compliance
+          Tuân thủ / Nhường nhịn
           </span
-        >, <span class="cursor-pointer underline" @click="viewStyle('b')">Dominance</span>,
-        <span class="cursor-pointer underline" @click="viewStyle('d')">Influence</span>,
-        <span class="cursor-pointer underline" @click="viewStyle('a')">Steadiness</span>
+        >, <span class="cursor-pointer underline" @click="viewStyle('b')">Thống trị</span>,
+        <span class="cursor-pointer underline" @click="viewStyle('d')">Ảnh hưởng</span>,
+        <span class="cursor-pointer underline" @click="viewStyle('a')">Ổn định</span>
       </div>
     </div>
 
@@ -70,7 +66,8 @@
         >
           <question
             :answers="options"
-            name="Question"
+            name="Câu"
+            lang="vi"
             :index="`${index + 1}`"
             @submit="(result) => updateResult(result, index)"
           />
@@ -81,9 +78,9 @@
       <div class="text-center mb-4">
         <b-button type="is-primary" inverted rounded @click="reset">←</b-button>
       </div>
-      <YourStyle :your-style="yourStyle" class="mb-8" />
+      <YourStyle :your-style="yourStyle" class="mb-8" lang="vi" />
       <div class="text-center">
-        <b-button type="is-warning" @click="reset">Reset</b-button>
+        <b-button type="is-warning" @click="reset">Làm lại</b-button>
       </div>
     </section>
   </Layout>
@@ -95,7 +92,7 @@ import _max from "lodash/max";
 import Question from "@/components/Question";
 import YourStyle from "@/components/YourStyle";
 import Card from "@/components/Card";
-import data from "../data/data";
+import data from "../data/data.vi";
 
 export default {
   components: {
