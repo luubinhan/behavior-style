@@ -150,6 +150,6 @@ export default {
         "cẩn thận hoàn thành nhiệm vụ.",
         "rất quan đến sự san toàn.",
         "thiếu khả năng tượng tượng.",
-        "có vẻ sẽ dễ bị thuyết không, nhưng không hẳn,
+        "có vẻ sẽ dễ bị thuyết không, nhưng không hẳn",
     ],
 }
