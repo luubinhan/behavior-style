@@ -3,7 +3,7 @@ export default {
         {
             good_use: "hoạt ngôn",
             poor_use: "nói nhiều",
-            best_approach: "nói ai trước",
+            best_approach: "Đi từ 'ai' trước",
         },
         {
             good_use: "cảm hứng",

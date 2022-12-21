@@ -1,39 +1,39 @@
 export default {
     data: [
         {
-            good_use: "patient",
-            poor_use: "hesitant",
-            best_approach: "explain why and who first",
+            good_use: "Kiên nhẫn",
+            poor_use: "Lưỡng lự",
+            best_approach: "Giải thích ai, tại sao",
         },
         {
-            good_use: "respectful",
-            poor_use: "vague",
-            best_approach: "ask instead of telling",
+            good_use: "tôn trọng",
+            poor_use: "không rõ ràng",
+            best_approach: "yêu cầu",
         },
         {
-            good_use: "willing",
-            poor_use: "compliant",
-            best_approach: "share your feelings",
+            good_use: "sẵn sàng",
+            poor_use: "phàn nàn",
+            best_approach: "chia sẽ cảm xúc",
         },
         {
-            good_use: "empathetic",
-            poor_use: "conforming",
-            best_approach: "draw out their opinions",
+            good_use: "đồng cảm",
+            poor_use: "phù hợp",
+            best_approach: "rút ra ý kiến",
         },
         {
-            good_use: "agreeable",
-            poor_use: "dependent",
-            best_approach: "explore personal life",
+            good_use: "chấp nhận",
+            poor_use: "phụ thuộc",
+            best_approach: "khám phá cuộc sống cá nhân",
         },
         {
-            good_use: "dependable",
-            poor_use: "unsure",
-            best_approach: "define expectations",
+            good_use: "đáng tin cậy",
+            poor_use: "không chắc chắn",
+            best_approach: "xác định kỳ vọng",
         },
         {
-            good_use: "concerned",
-            poor_use: "laid back",
-            best_approach: "strive for harmony",
+            good_use: "quan tâm",
+            poor_use: "tha thứ",
+            best_approach: "tìm kiếm sự hài hòa",
         },
     ],
     columns: [
@@ -51,10 +51,10 @@ export default {
         },
     ],
     intro: [
-        "Interested in, and places high value, on personal relationships, feelings, human interactions, and affiliation with others.",
-        "Warm and sensitive to the feelings of others.",
-        "Perceptive, able to assess a situation in terms of the human emotions involved.",
-        "Loyal and supportive.",
+        "Quan tâm đánh giá cao các mối quan hệ cá nhân, tương tác với người khác",
+        "Ấm áp, nhạy cảm với cảm xúc của người khác",
+        "Cảm nhận tốt, có thể đánh giá cảm xúc của người xung quanh",
+        "Trung thành và hỗ trợ",
     ],
     features: [
         {
@@ -74,8 +74,8 @@ export default {
         },
     ],
     labels: [
-        "Steadiness",
-        "May be viewed as emotional, sentimental, and too easily persuaded by others.",
+        "Ổn định",
+        "Có thể xem là người đa cảm, dễ bị người khác thuyết phục",
         "Đặc điểm nhận dạng",
         "Giao tiếp",
         "Nhìn chung, bạn là người",
@@ -84,73 +84,72 @@ export default {
     observable: [
         {
             label: "Tiếp cận",
-            value: "Tentative, considerate, and organised.",
+            value: "Chu đáo, có tổ chức",
         },
         {
             label: "Sử dụng thời gian",
-            value: "Refers to past events and relationships with others over time.",
+            value: "Hoài niệm, gắn kết với các sự kiện, con người trong quá khứ.",
         },
         {
             label: "Bắt tay",
-            value: "Sincere",
+            value: "Chân thành",
         },
         {
             label: "Bàn làm việc",
-            value: "Pictures in the office may be of possessions and family.",
+            value: "Ảnh chân dung cá nhân, hay ảnh gia đình",
         },
         {
             label: "Trang phục",
-            value: "Appropriate but for comfort rather than fashion.",
+            value: "Phù hợp, ưu tiên sự thoải mái hơn thời trang",
         },
         {
             label: "Tác phong",
-            value: "Very courteous and welcoming.",
+            value: "Rất lịch sự và chu đáo",
         },
         {
             label: "Giao tiếp bằng mắt",
-            value: "Warm, friendly, sincere.",
+            value: "Nhiệt tình, thân thiện, chân thành",
         },
         {
             label: "Ngôn ngữ cơ thể",
-            value: "Relaxed and attentive.",
+            value: "Chu đáo, thoải mái.",
         },
         {
             label: "Xử lý bất đồng",
             value:
-                "Prefers to smooth over the situation rather than rush in with an aggressive decision.",
+                "Thích giải quyết tình huống suôn sẻ hơn là vội vàng đưa ra một quyết định táo bạo",
         },
     ],
     communication: [
         {
             label: "Phong cách quản lý",
-            value: "Organising",
+            value: "Tổ chức",
         },
         {
             label: "Phong cách giao tiếp",
-            value: "Listening",
+            value: "Lăng nghe",
         },
         {
             label: "Muốn biết",
             value:
-          "How others may feel about the matter, who else will be involved in it, past experiences in similar situations, etc.",
+          "Những người khác sẽ thấy sao về vấn đề, có ai tham gia cùng nữa không, những kinh nghiệm tương tự trong quá khứ",
         },
         {
             label: "Văn phong",
             value:
-                "informal, chatty, and friendly. May include names and make references to others and to past events.",
+                "Thân mật, thân thiện, phản chiếu trên những người xung quanh",
         },
     ],
     general: [
-        "listen and may not talk a lot.",
-        "be content with things as they are.",
-        "question in order to clarify.",
-        "strive to maintain the status quo.",
-        "talk in a slow but firm voice.",
-        "not change pace easily or rapidly.",
-        "make tentative statements.",
-        "be thorough in finishing tasks.",
-        "be very security conscious.",
-        "appear to lack imagination.",
-        "appear convinced (but don’t assume they are!)",
+        "lắng nghe và ít nói",
+        "hài lòng với những gì đang có",
+        "đặt câu hỏi để làm rõ vấn đề",
+        "cố gắng duy trì hiện trạng.",
+        "nói chậm và rõ ràng.",
+        "không thay đổi nhịp điệu dễ dàng và nhanh chóng.",
+        "cẩn thận hoàn thành nhiệm vụ.",
+        "rất quan đến sự san toàn.",
+        "thiếu khả năng tượng tượng.",
+        "có vẻ sẽ dễ bị thuyết không, nhưng không hẳn,
     ],
 }
